@@ -32,7 +32,7 @@ end
 
 gem 'facter', *location_for(ENV['FACTER_GEM_VERSION'])
 gem 'puppet', *location_for(ENV['PUPPET_GEM_VERSION'])
-gem "ci_reporter_rspec", "=2.0.0"
+gem "ci_reporter_rspec", "=1.0.0"
 gem "puppet-lint", "=1.1.0"
 
 if File.exists? "#{__FILE__}.local"
