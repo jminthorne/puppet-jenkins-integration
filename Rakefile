@@ -11,9 +11,8 @@ PuppetLint.configuration.send('disable_single_quote_string_with_variables')
 PuppetLint.configuration.send('disable_only_variable_string')
 PuppetLint.configuration.ignore_paths = ["spec/**/*.pp", "pkg/**/*.pp"]
 
-if ENV['GENERATE_REPORTS'] == 'true'
-  require 'ci/reporter/rake/rspec'
-  task :rspec => 'ci:setup:rspec'
+namespace :ci do
+  task :all => ['ci:setup:rspec', 'rspec']
 end
 
 desc 'Generate pooler nodesets'
