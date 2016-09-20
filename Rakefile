@@ -16,6 +16,7 @@ namespace :ci do
   task :all => ['ci:setup:rspec', 'rspec']
 end
 
+
 desc 'Generate pooler nodesets'
 task :gen_nodeset do
   require 'beaker-hostgenerator'

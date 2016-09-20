@@ -35,6 +35,7 @@ gem 'puppet', *location_for(ENV['PUPPET_GEM_VERSION'])
 gem 'ci_reporter_rspec', '=1.0.0'
 gem 'puppet-lint', '=1.1.0'
 gem 'rspec-puppet', '>= 2.3.2'
+gem 'rspec', '3.5.0'
 
 if File.exists? "#{__FILE__}.local"
   eval(File.read("#{__FILE__}.local"), binding)
