@@ -13,7 +13,7 @@ PuppetLint.configuration.send('disable_only_variable_string')
 PuppetLint.configuration.ignore_paths = ["spec/**/*.pp", "pkg/**/*.pp"]
 
 namespace :ci do
-  task :all => ['ci:setup:rspec', 'rspec']
+  task :all => ['ci:setup:rspec', '/usr/local/bin/rspec']
 end
 
 
